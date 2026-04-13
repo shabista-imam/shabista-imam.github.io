@@ -1694,9 +1694,9 @@ particlesJS('particles-js',
 animate({
   elements: ".service-block",
   duration: 2000,
-  delay: index => index * 90,
+  delay: function(index) { return index * 90; },
   transform: ["scale(0)", "scale(1)"]
-})
+});
 
 
 
